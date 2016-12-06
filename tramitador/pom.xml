@@ -16,18 +16,11 @@
 		<maven>2.0.9</maven>
 	</prerequisites>
 
-
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>Repositorio tecdoc de releases</name>
-			<url>http://devel.uji.es/nexus/content/repositories/releases/</url>
+			<id>local-deploy</id>
+			<url>${DeployDir}</url>
 		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Repositorio tecdoc de snapshots</name>
-			<url>http://devel.uji.es/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<profiles>
@@ -145,7 +138,7 @@
 								<phase>package</phase>
 								<configuration>
 									<tasks>
-										<property name="dist.dir" value="/invesFlow/${pom.version}"/>
+										<property name="dist.dir" value="${project.build.directory}/invesFlow/${pom.version}"/>
 
 										<delete dir="${dist.dir}"/>
 										<mkdir dir="${dist.dir}" />

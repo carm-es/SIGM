@@ -10,6 +10,13 @@
     <maven>2.0.9</maven>
   </prerequisites>
 
+  <distributionManagement>
+    <repository>
+      <id>local-deploy</id>
+      <url>${DeployDir}</url>
+    </repository>
+  </distributionManagement>
+
   <modules>
     <module>framework</module>
     <module>framework-audit</module>

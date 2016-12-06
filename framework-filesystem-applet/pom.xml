@@ -15,6 +15,12 @@
 		<skipDeploy>false</skipDeploy>
 	</properties>	
 	
+	<distributionManagement>
+		<repository>
+			<id>local-deploy</id>
+			<url>${DeployDir}</url>
+		</repository>
+	</distributionManagement>
 	
 	<dependencies>
 		<dependency>

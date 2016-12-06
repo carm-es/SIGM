@@ -220,7 +220,7 @@
 			<resource>
 				<filtering>true</filtering>
 				<directory>${unpack.config.directory}/SIGEM_RegistroPresencial/Isicres</directory>
-				<targetPath>/SIGEM_RegistroPresencial</targetPath>
+				<!--targetPath>/SIGEM_RegistroPresencial</targetPath-->
 				<excludes>
 					<exclude>**/log4j.xml</exclude>
 				</excludes>
@@ -347,9 +347,9 @@
 
 		<!-- plugin de overlay correcto con dependencias -->
 		 	<plugin>
-				<groupId>org.appfuse</groupId>
-				<artifactId>maven-warpath-plugin</artifactId>
-				 <version>2.0.2</version>
+				 <groupId>org.appfuse.plugins</groupId>
+				 <artifactId>maven-warpath-plugin</artifactId>
+				 <version>2.2.1</version>
 				 <extensions>true</extensions>
 			      <executions>
 			        <execution>

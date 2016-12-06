@@ -11,6 +11,13 @@
 		<maven>2.0.9</maven>
 	</prerequisites>
 
+	<distributionManagement>
+		<repository>
+			<id>local-deploy</id>
+			<url>${DeployDir}</url>
+		</repository>
+	</distributionManagement>
+
 	<profiles>
 
 		<profile>
@@ -366,6 +373,53 @@
 											<fileset dir="${basedir}\SIGEM_Config\target" includes="*.zip"/>
 											<fileset dir="${basedir}\SIGEM_BD_DIST\target" includes="*.zip"/>
 										</copy>
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- 
+		   Este profile debe ejecutarse con el anterior -Dears -Pgenerate-distri -Pbuild-release 
+		-->
+		<profile>
+			<id>build-release</id>
+			<activation>
+				<property>
+					<name>brelease</name>
+				</property>
+			</activation>
+
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>copy-wars</id>
+								<phase>package</phase>
+								<configuration>
+									<tasks>
+										<property name="dist.dir" value="${basedir}/../RELEASE/SIGM-${project.version}"/>
+										<property name="vers" value="${project.version}"/>
+
+										<delete dir="${dist.dir}"/>
+
+										<mkdir dir="${dist.dir}/Binarios"/>
+										<mkdir dir="${dist.dir}/BD"/>
+										<mkdir dir="${dist.dir}/config"/>
+
+										<copy overwrite="true" todir="${dist.dir}/Binarios" verbose="true">
+											<fileset dir="${basedir}/SIGEM_DIST/" includes="*.war"/>
+										</copy>
+										<copy overwrite="true" todir="${dist.dir}/config" verbose="true" file="${basedir}/SIGEM_DIST/sigem_config-${vers}.zip" />
+										<unzip dest="${dist.dir}/BD/" src="${basedir}/SIGEM_DIST/sigem_bd_dist-${vers}-bd.zip" />
+										<zip destfile="${dist.dir}.zip" basedir="${dist.dir}" />
 									</tasks>
 								</configuration>
 								<goals>

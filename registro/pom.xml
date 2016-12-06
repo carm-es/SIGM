@@ -226,16 +226,10 @@
 
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <name>Repositorio de releases</name>
-      <url>http://devel.uji.es/nexus/content/repositories/releases/</url>
+      <id>local-deploy</id>
+      <url>${DeployDir}</url>
     </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>Repositorio de snapshots</name>
-      <url>http://devel.uji.es/nexus/content/repositories/snapshots/</url>
-      </snapshotRepository>
-    </distributionManagement>
+  </distributionManagement>
 
   <modules>
     <module>ISicres-Terceros</module>

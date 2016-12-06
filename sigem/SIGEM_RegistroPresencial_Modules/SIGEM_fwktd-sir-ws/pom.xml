@@ -15,15 +15,9 @@
 
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <name>Repositorio de releases</name>
-      <url>http://devel.uji.es/nexus/content/repositories/releases/</url>
+      <id>local-deploy</id>
+      <url>${DeployDir}</url>
     </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>Repositorio de snapshots</name>
-      <url>http://devel.uji.es/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
   </distributionManagement>
 
 	<properties>
@@ -117,7 +111,7 @@
 		 	<plugin>
 				<groupId>org.appfuse.plugins</groupId>
 				<artifactId>maven-warpath-plugin</artifactId>
-				<version>2.1.0</version>
+				<version>2.2.1</version>
 				<extensions>true</extensions>
 			    <executions>
 			        <execution>

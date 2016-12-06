@@ -30,7 +30,7 @@
 
 		<dependency>
 			<groupId>es.ieci.tecdoc.sigem</groupId>
-			<artifactId>SIGEM_Consolidacion</artifactId>
+			<artifactId>sigem_consolidacion</artifactId>
 			<version>${pom.version}</version>
 		</dependency>
 

@@ -55,7 +55,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>axis</groupId>
+			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-ant</artifactId>
 			<version>1.4</version>
 			<scope>provided</scope>
@@ -118,7 +118,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>xstream</groupId>
+			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>1.2.2</version>
 		</dependency>

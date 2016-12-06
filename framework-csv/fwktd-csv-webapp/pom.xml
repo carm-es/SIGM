@@ -16,13 +16,6 @@
 		<unpack.config.directory>${project.build.directory}/generated-resources</unpack.config.directory>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>uji</id>
-      <url>http://devel.uji.es/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
-
 	<dependencies>
 
 		<!-- fwktd-csv dependencies -->
