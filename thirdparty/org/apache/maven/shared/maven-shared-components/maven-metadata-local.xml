@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.apache.maven.shared</groupId>
+  <artifactId>maven-shared-components</artifactId>
+  <version>6</version>
+  <versioning>
+    <versions>
+      <version>6</version>
+    </versions>
+    <lastUpdated>20161128211054</lastUpdated>
+  </versioning>
+</metadata>

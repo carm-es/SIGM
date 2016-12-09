@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sun.media</groupId>
+  <artifactId>jai-codec</artifactId>
+  <version>1.1.3</version>
+  <versioning>
+    <versions>
+      <version>1.1.3</version>
+    </versions>
+    <lastUpdated>20161128203425</lastUpdated>
+  </versioning>
+</metadata>

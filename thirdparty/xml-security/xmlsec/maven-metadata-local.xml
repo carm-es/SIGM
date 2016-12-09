@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>xml-security</groupId>
+  <artifactId>xmlsec</artifactId>
+  <version>1.4.0</version>
+  <versioning>
+    <versions>
+      <version>1.4.0</version>
+    </versions>
+    <lastUpdated>20161126163756</lastUpdated>
+  </versioning>
+</metadata>
