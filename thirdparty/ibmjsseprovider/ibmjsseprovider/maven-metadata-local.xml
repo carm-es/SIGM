@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ibmjsseprovider</groupId>
+  <artifactId>ibmjsseprovider</artifactId>
+  <version>1.0.3</version>
+  <versioning>
+    <versions>
+      <version>1.0.3</version>
+    </versions>
+    <lastUpdated>20161128203338</lastUpdated>
+  </versioning>
+</metadata>

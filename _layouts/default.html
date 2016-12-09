@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="AL SIGM - Documentación"/>
+    <meta name="keywords" content="ALSIGM, AL SIGM, sede electrónica, gobierno, administración electrónica, compulsa, archivo electrónico, Dir3, DCO, SIR, 39/2016, 40/2016, 11/2007, registro, tramitación electrónica, expediente electrónico" />
+
+    <meta name="robots" content="index,follow" />
+    
+    {% capture lvl %}{{ page.url | append:'index.html' | split:'/' | size }}{% endcapture %}
+    {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
+     
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+          integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/redmond/jquery-ui.css"/>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ relative }}stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="print" href="{{ relative }}stylesheets/print.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="box">
+        <!-- HEADER -->
+        {% include header.html %}
+
+        <!-- NAVBAR -->
+        {% include navbar.html %}
+
+
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-md-2 hidden-sm-down sidebar" id="pageContents">
+                <h2>Indice</h2>
+                <ul></ul>
+            </div>
+            <div class="column col-md-8 col-sm-9 col-xs-11" id="main">
+                <section>
+                    {% include mobilenavbar.html %}
+
+                    <div id="sigm-docs-container" class="container sigm-docs-container">
+
+                        <div class="row">
+                            <span id="toolbarIcons"></span>
+                            {{ content }}
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- sidebar -->
+            {% include sidebar.html %}
+        </div>
+    </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"
+        integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7"
+        crossorigin="anonymous"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<!--
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+<script src="{{ relative }}javascripts/URI.js"></script>
+<script src="{{ relative }}javascripts/main.js"></script>
+</body>
+</html>

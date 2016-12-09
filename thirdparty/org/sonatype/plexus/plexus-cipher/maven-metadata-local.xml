@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.sonatype.plexus</groupId>
+  <artifactId>plexus-cipher</artifactId>
+  <version>1.4</version>
+  <versioning>
+    <versions>
+      <version>1.4</version>
+    </versions>
+    <lastUpdated>20161128211235</lastUpdated>
+  </versioning>
+</metadata>

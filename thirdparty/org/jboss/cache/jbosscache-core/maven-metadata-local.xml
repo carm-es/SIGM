@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.jboss.cache</groupId>
+  <artifactId>jbosscache-core</artifactId>
+  <version>3.2.1.GA</version>
+  <versioning>
+    <versions>
+      <version>3.2.1.GA</version>
+    </versions>
+    <lastUpdated>20161126164114</lastUpdated>
+  </versioning>
+</metadata>

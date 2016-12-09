@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.infinispan</groupId>
+  <artifactId>infinispan-core</artifactId>
+  <version>4.0.0.FINAL</version>
+  <versioning>
+    <versions>
+      <version>4.0.0.FINAL</version>
+    </versions>
+    <lastUpdated>20161126163957</lastUpdated>
+  </versioning>
+</metadata>
