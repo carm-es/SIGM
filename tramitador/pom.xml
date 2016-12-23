@@ -76,6 +76,20 @@
 		<!-- Los modulos que tengan como resultado un war/ear deben incluirse
 			 en este perfil -->
 		<profile>
+			<id>generate-wars</id>
+			<activation>
+				<property>
+					<name>wars</name>
+				</property>
+			</activation>
+			<modules>
+				<module>ispac-catalog</module>
+				<module>ispac-mgr</module>
+				<module>ispac-publicador</module>
+				<module>ispac-services-ws</module>
+			</modules>
+		</profile>
+		<profile>
 			<id>generate-ears</id>
 			<activation>
 				<property>
@@ -151,7 +165,7 @@
 										<mkdir dir="${dist.dir}/war" />
 
 										<unzip src="${basedir}/ispac-config/target/ispac-config-${pom.version}.zip" dest="${dist.dir}/config"/>
-										<unzip src="${basedir}/ispac-docs/target/ispac-docs-${pom.version}-documentacion.zip" dest="${dist.dir}/docs"/>
+										<!-- unzip src="${basedir}/ispac-docs/target/ispac-docs-${pom.version}-documentacion.zip" dest="${dist.dir}/docs"/ -->
 
 										<copy todir="${dist.dir}/database" overwrite="true" verbose="true">
 											<fileset dir="${basedir}/ispac-db" excludes="**/*svn"/>
