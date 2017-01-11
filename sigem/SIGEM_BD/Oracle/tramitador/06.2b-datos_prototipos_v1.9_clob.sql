@@ -2,6 +2,9 @@
 -- INSERCION DE DATOS CLOB (longitud maxima de 32k en la cadena asignada a la variable clob)
 --
 
+
+set define off
+
 --
 -- Formularios
 --
